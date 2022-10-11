@@ -381,7 +381,7 @@ body.offcanvas {
 .colorlib-services,
 .colorlib-contact {
   padding-top: 4em;
-  padding-bottom: 9em;
+  padding-bottom: auto;
   clear: both;
   width: 100%;
   display: block; }
