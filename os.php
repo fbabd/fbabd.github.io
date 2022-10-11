@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<!--  head meta starts  -->
-		<?php require 'includes/header_meta.php';?>
+		<?php require 'header_meta.php';?>
 	<!--  head meta ends  -->
 	</head>
 	<body>
@@ -11,7 +11,7 @@
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 		
 		<!--  Sidebar starts  -->
-		<?php require 'includes/sidebar.php';?> 
+		<?php require 'sidebar.php';?> 
 		<!--  Sidebar ends  -->
 
 		
