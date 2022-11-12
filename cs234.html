@@ -125,20 +125,19 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 									<div class="about-desc">
 										<span class="heading-meta"> CS 234 : Computational Methods for the Analysis of Biomolecular Data </span>
 										
-										<p> <strong> Project: Protein subcellular localization prediction </strong> </p>
+										<p> <strong> Project: Classifying High Occupancy of Targets (HOT) regions, and Low Occupancy of Targets (LOT) regions from DNA sequences </strong> </p>
 									
 										<p style="text-align:justify;">
-											Protein subcellular localization prediction involves predicting the location of a given protein in the cell. 
-											This problem will take a protein sequence as input, and will give output the location of the protein 
-											in the cell (nucleus, endoplasmic reticulum, golgi apparatus etc.). It is important for predicting protein 
-											function, genome annotation, identifying drug targets etc.
+											Regulatory binding factor are not randomly distributed among the whole genome of human. 50% of them are found clustered is different
+											regions in the genome. These regions are called High Occupancy Target (HOT) regions, consequently the other regions of the genome are termed 
+											as Low Occupancy Target (LOT) regions. Approximately, 90% of the constituents of Human HOT regions show strong enrichment of promoters while 
+											10-20% shows context-specific enrichment. 
 										</p>
 										
 										<p style="text-align:justify;">
-											This can be done experimentally, which is a very time-consuming process. Immunolabeling using fluorescence 
-											microscope is used to view localization. Due to the development of machine learning and increased amount of 
-											data regarding proteins with known localization, it has become a probable challenge in bioinformatics and machine 
-											learning to predict the localization utilizing these datasets. 
+											Due to the development of machine learning and with known HOT positions in genome,
+											we can find a model to classify these regions. My goal is to find a model which can 
+											be interpretable. 
 										</p>
 										
 										<p style="text-align:justify;">
@@ -194,6 +193,40 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 												
 												
 										 	</ul>
+											
+											<span> <strong> Oct 28 </strong> </span>
+										 	<ul style="list-style-type: none;"> 
+												
+												<li><span><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+												 Changed the project to HOT classification. 
+												</li>
+										
+											 
+												
+												<li><span><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+												 Preprocessed sequence using k-mers. Used pretarained k-mer vectors for classification. 
+												</li>
+												
+												<li><span><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+												 Notebook: <a href="https://github.com/fbabd/hot-lot/blob/main/notebook-1.ipynb"> Notebook Link </a>
+												
+												</li>
+										 	</ul>
+										
+											<span> <strong> Nov 11 </strong> </span>
+										 	<ul style="list-style-type: none;"> 
+												
+												<li><span><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+												 Preprocessed sequence using a fixed length 1000. Used a deep learning model for classification and evaluated
+													performance on unknown test set.
+												</li>
+												
+												<li><span><i class="fa fa-check-square-o" aria-hidden="true"></i></span> 
+												 Notebook: <a href="https://github.com/fbabd/hot-lot/blob/main/notebook-2-DL.ipynb"> Notebook Link </a>
+												
+												</li>
+										 	</ul>
+										
 										</p>
 										
 									</div>
