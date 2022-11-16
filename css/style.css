@@ -36,7 +36,6 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Playfair Display", Georgia, serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
 
@@ -433,7 +432,7 @@ body.offcanvas {
   font-size: 15px;
   text-transform: uppercase;
   color: #2C98F0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 3px; }
 
 .about-img {
