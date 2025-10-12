@@ -1,92 +1,18 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Research Paper - Faisal Bin Ashraf</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Research paper analysis and explanation by Faisal Bin Ashraf" />
-	<meta name="keywords" content="research, paper, explanation, Faisal Bin Ashraf, academic" />
-	<meta name="author" content="Faisal Bin Ashraf" />
-
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="Research Paper - Faisal Bin Ashraf"/>
-	<meta property="og:image" content="images/research_paper_image.jpg"/>
-	<meta property="og:url" content="https://fbabd.github.io"/>
-	<meta property="og:site_name" content="Faisal Bin Ashraf Research"/>
-	<meta property="og:description" content="Research paper analysis and explanation"/>
-	<meta name="twitter:title" content="Research Paper - Faisal Bin Ashraf" />
-	<meta name="twitter:image" content="images/research_paper_image.jpg" />
-	<meta name="twitter:url" content="https://fbabd.github.io" />
-	<meta name="twitter:card" content="summary_large_image" />
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
+		<div data-include="partials/head.html"></div> 
 	</head>
+
+
 	<body>
 	<div id="colorlib-page">
 		<div class="container-wrap">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
 		
-		<!--  Sidebar starts  -->
-		
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/headshot.jpg);"></div>
-				<h1 class="heading-meta"><a href="index.html">  Faisal Bin Ashraf</a></h1>
-				<span class="position"><a href="#">PhD Candidate</a> <br/> University of California, Riverside <br/> </span>
-				<!--<span class="position"><a href="#">Lecturer (On Leave)</a> at Brac University <br/> Dhaka, Bangladesh</span>-->
-			</div>
-			<!-- <nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						
-						<li class="active"><a href="index.html" data-nav-section="about">Research Paper</a></li>
-						<li><a href="#" data-nav-section="publications">Publications</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav> -->
-			<div class="colorlib-footer">
-			
-				<p><a class="btn btn-primary btn-learn" href="https://www.biorxiv.org/content/10.1101/2024.12.19.629473v1.full" target="blank">Paper Link <i class="icon-download4"></i></a></p>
-			</div>
-
-			<div class="colorlib-footer">
-				<p><small>&copy; Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved. </small></p>
-			</div>
-
-		</aside> <!--  Sidebar ends  -->
+		<!--  Sidebar Starts  -->
+		<div data-include="partials/sidebar.html"></div> 
+		<!--  Sidebar Ends  -->
 
 		
 		
@@ -200,7 +126,8 @@
 	
 	
 	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+	<!-- Load includes LAST; it will inject the partials and THEN load main.js -->
+	<script src="js/include.js" defer></script> 
 
 	</body>
 </html>
