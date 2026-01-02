@@ -83,6 +83,9 @@
   <p style="text-align:justify;">
   
     <ul class="pubs-list">
+
+
+      
       <li itemscope itemtype="https://schema.org/ScholarlyArticle">
         <span class="pub-title" itemprop="name">
           Predicting Antibody-Antigen Interactions with Structure-Aware LLMs: Insights from SARS-CoV-2 Variants
@@ -122,6 +125,9 @@
         </p>
       </li>
 
+
+
+      
       <li itemscope itemtype="https://schema.org/SoftwareApplication">
         <span class="pub-title" itemprop="name">
           SPICE: Structural Protein Interaction Complex Evaluator
@@ -165,6 +171,7 @@
         </div>
       </li>
 
+      
 
       <li itemscope itemtype="https://schema.org/ScholarlyArticle">
         <span class="pub-title" itemprop="name">
@@ -204,32 +211,88 @@
         </p>
       </li>
 
-      <li itemscope itemtype="https://schema.org/ScholarlyArticle">
-        <span class="pub-title" itemprop="name"> Enhancing breast cancer classification via histopathological image analysis: Leveraging self-supervised contrastive learning and transfer learning</span><br/>
-        <span class="pub-meta" itemprop="isPartOf">Heliyon, 2024</span><br/>
-        <span class="pub-author" itemprop="author">Faisal Bin Ashraf, SM Maksudul Alam, Shahriar M Sakib</span><br/>
-        <div class="pub-links">
-          <a class="label label-default" href="https://www.cell.com/heliyon/fulltext/S2405-8440(24)00125-7" target="_blank" rel="noopener"><i class="fa fa-link"></i> DOI</a>
-        </div>
-      </li>
+  
 
       <li itemscope itemtype="https://schema.org/ScholarlyArticle">
-        <span class="pub-title" itemprop="name">  Bio-activity prediction of drug candidate compounds targeting SARS-Cov-2 using machine learning approaches</span><br/>
-        <span class="pub-meta" itemprop="isPartOf">Plos ONE, 2023</span><br/>
-        <span class="pub-author" itemprop="author">Faisal Bin Ashraf, Sanjida Akter, Sumona Hoque Mumu, Muhammad Usama Islam, Jasim Uddin</span><br/>
-        <div class="pub-links">
-          <a class="label label-default" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288053&fa__ca=top_weekly&fa__ty=article&fa__te=engage_often&fa__co=subtopics" target="_blank" rel="noopener"><i class="fa fa-link"></i> DOI</a>
+        <span class="pub-title" itemprop="name">
+          Enhancing breast cancer classification via histopathological image analysis: Leveraging self-supervised contrastive learning and transfer learning
+        </span><br/>
+      
+        <span class="pub-meta">
+          Heliyon, 2024 
+        </span><br/>
+      
+        <span class="pub-author">
+          Faisal Bin Ashraf, SM Maksudul Alam, Shahriar M Sakib
+        </span>
+
+         <div class="pub-links">
+          <a class="label label-default"
+             href="https://www.cell.com/heliyon/fulltext/S2405-8440(24)00125-7"
+             target="_blank"
+             rel="noopener">
+            DOI: 10.1016/j.heliyon.2024.e24094
+          </a>
         </div>
+      
+        <p class="pub-summary" style="text-align:justify;">
+          <b>How can deep learning models achieve high diagnostic accuracy for breast cancer histopathology under limited labeled data and computational constraints?</b>
+          In this work, I develop deep learning–based pipelines for automated breast cancer diagnosis from histopathological images,
+          with a focus on robustness, annotation efficiency, and lightweight model design.
+          To reduce reliance on manual labels, I implement a self-supervised contrastive learning framework that progressively
+          incorporates high-confidence pseudo-labeled samples from an unlabeled data pool.
+          <br><br>
+          I further design a lightweight hybrid CNN architecture combining ResNet50 with Inception modules, achieving strong
+          diagnostic performance with only 3.6M parameters, enabling efficient inference.
+          The proposed models are evaluated across multiple image magnifications (40X, 100X, 200X, and 400X),
+          demonstrating robust generalization with accuracies of 98% at 40X and 200X, and 94% at 100X and 400X.
+          Overall, this work shows that self-supervised learning and hybrid architectural strategies can deliver
+          high diagnostic accuracy while maintaining computational efficiency, making them well suited for
+          real-world clinical deployment scenarios.
+        </p>
+      </li> 
+
+
+      
+      <li itemscope itemtype="https://schema.org/ScholarlyArticle">
+        <span class="pub-title" itemprop="name">
+          Bio-activity prediction of drug candidate compounds targeting SARS-Cov-2 using machine learning approaches
+        </span><br/>
+      
+        <span class="pub-meta">
+          Plos ONE, 2023 
+        </span><br/>
+      
+        <span class="pub-author">
+          Faisal Bin Ashraf, Sanjida Akter, Sumona Hoque Mumu, Muhammad Usama Islam, Jasim Uddin
+        </span>
+
+         <div class="pub-links">
+          <a class="label label-default"
+             href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288053"
+             target="_blank"
+             rel="noopener">
+            DOI: 10.1371/journal.pone.0288053
+          </a>
+        </div>
+      
+        <p class="pub-summary" style="text-align:justify;">
+          <b>Can machine learning models reliably prioritize antiviral drug candidates before costly in-vitro and in-vivo experiments?</b>
+          In this work, I develop and evaluate machine learning models for predicting the bioactivity of small-molecule compounds
+          targeting the SARS-CoV-2 3CLpro protease, enabling early-stage compound prioritization for drug discovery.
+          The study integrates curated experimental bioactivity data from ChEMBL and PubChem into a unified modeling pipeline
+          for systematic compound screening.
+          <br><br>
+          I benchmark 27 machine learning classifiers and train a neural network model achieving up to 91% accuracy on ChEMBL data
+          and 93% accuracy on combined ChEMBL and PubChem datasets, with strong classification performance reflected by F1-scores
+          of 93% for inactive compounds and 94% for active compounds.
+          To improve interpretability, SHAP-based analysis is applied to XGBoost models, revealing key PaDEL molecular descriptors
+          that drive bioactivity predictions and providing mechanistic insight into model decisions.
+          Overall, this work demonstrates the effectiveness of ML-based bioactivity prediction for accelerating early-stage
+          antiviral drug discovery.
+        </p>
       </li>
 
-      <li itemscope itemtype="https://schema.org/ScholarlyArticle">
-        <span class="pub-title" itemprop="name">  YoNet: A Neural Network for Yoga Pose Classification</span><br/>
-        <span class="pub-meta" itemprop="isPartOf">SN Computer Science, 2023</span><br/>
-        <span class="pub-author" itemprop="author" >Faisal Bin Ashraf, Muhammad Usama Islam, Md Rayhan Kabir, Jasim Uddin</span><br/>
-        <div class="pub-links">
-          <a class="label label-default" href="https://link.springer.com/article/10.1007/s42979-022-01618-8" target="_blank" rel="noopener"><i class="fa fa-link"></i> DOI</a>
-        </div>
-      </li>
 
 
     </ul>
