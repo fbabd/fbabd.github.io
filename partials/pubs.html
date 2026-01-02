@@ -1,3 +1,76 @@
+<style>
+  /* ===== Publications List Styling ===== */
+  .pub-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .pub-list li {
+    background: #f7f8fa;
+    border: 1px solid #e4e6eb;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 18px;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .pub-list li:hover {
+    background: #f4f6f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .pub-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1f2937; /* dark slate */
+  }
+
+  .pub-meta {
+    font-size: 0.92rem;
+    color: #4b5563; /* muted gray */
+  }
+
+  .pub-author {
+    font-size: 0.9rem;
+    color: #374151;
+  }
+
+  .pub-links {
+    margin-top: 6px;
+    margin-bottom: 8px;
+  }
+
+  .pub-links .label {
+    font-size: 0.78rem;
+    padding: 4px 8px;
+    background: #e5e7eb;
+    color: #1f2937;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+  .pub-links .label:hover {
+    background: #d1d5db;
+  }
+
+  .pub-summary {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #1f2937;
+    margin-top: 6px;
+  }
+
+  @media (max-width: 768px) {
+    .pub-list li {
+      padding: 14px 14px;
+    }
+    .pub-title {
+      font-size: 1rem;
+    }
+  }
+</style>
+
 <div class="colorlib-narrow-content">
 <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
 <div class="col-md-12">
@@ -11,26 +84,41 @@
   
     <ul class="pubs-list">
       <li itemscope itemtype="https://schema.org/ScholarlyArticle">
-        <span class="pub-title" itemprop="name">Predicting Antibody-Antigen Interactions with Structure-Aware LLMs: Insights from SARS-CoV-2 Variants</span><br/>
-        <span class="pub-meta" itemprop="isPartOf">Journal of Chemical Information and Modeling, 2025</span><br/>
-        <span class="pub-author" itemprop="author">Faisal Bin Ashraf, Vinz Angelo Madrigal, Stefano Lonardi</span><br/>
+        <span class="pub-title" itemprop="name">
+          Predicting Antibody-Antigen Interactions with Structure-Aware LLMs: Insights from SARS-CoV-2 Variants
+        </span><br/>
+    
+        <span class="pub-meta" itemprop="isPartOf">
+          Journal of Chemical Information and Modeling, 2025
+        </span><br/>
+    
+        <span class="pub-author" itemprop="author">
+          Faisal Bin Ashraf, Vinz Angelo Madrigal, Stefano Lonardi
+        </span>
+    
         <div class="pub-links">
-          <a class="label label-default" href="https://doi.org/10.1021/acs.jcim.5c00973" target="_blank" rel="noopener"><i class="fa fa-link"></i> DOI</a>
+          <a class="label label-default"
+             href="https://doi.org/10.1021/acs.jcim.5c00973"
+             target="_blank"
+             rel="noopener">
+            DOI
+          </a>
         </div>
-        <p style="text-align:justify;">
+    
+        <p class="pub-summary" style="text-align:justify;">
           <b>Can protein language models better predict antibody binding and neutralization when they are taught to understand three-dimensional structure?</b>
-          In this work, I develop <b>structure-aware antibody language models</b> by augmenting pretrained <b>ESM2</b> with a <b>contact-map prediction objective</b>,
-          enabling joint learning of <b>sequence and structural context</b> while preserving general protein language modeling.
-          By leveraging both experimental and <b>ESMFold-predicted structures</b>, the model learns <b>antibody-specific representations</b> that capture
-          interaction-relevant geometry beyond sequence alone.
+          In this work, I develop a structure-aware antibody language modeling framework, referred to as
+          <b>structure-aware ESM2</b>, by augmenting pretrained ESM2 with a contact-map prediction objective.
+          This enables joint learning of sequence and structural context while preserving general protein language understanding.
+          By leveraging both experimental and ESMFold-predicted structures, the model learns antibody-specific representations
+          that capture interaction-relevant geometry beyond sequence alone.
           <br><br>
-          <b>Results.</b> The proposed approach delivers substantial performance gains, improving <b>binding prediction AUC</b> from
-          <b>0.84 → 0.93</b> and <b>neutralization prediction AUC</b> from <b>0.88 → 0.95</b>.
-          The resulting <b>antibody-specific LLMs</b> consistently outperform pretrained and fine-tuned ESM2 models, as well as
-          state-of-the-art methods including <b>DeepAIR</b>, <b>AntiBERTa</b>, <b>AbMap</b>, and <b>A2Binder</b>,
-          while using a <b>comparatively simple architecture</b>.
-          Notably, we show that even <b>approximate ESMFold structures</b> provide meaningful structural signals that
-          <b>consistently improve prediction accuracy</b> and <b>antibody–antigen embedding quality</b>.
+          The proposed approach achieves substantial performance gains, improving binding prediction AUC from 0.84 to 0.93
+          and neutralization prediction AUC from 0.88 to 0.95.
+          Antibody-specific models consistently outperform pretrained and fine-tuned ESM2 baselines, as well as
+          state-of-the-art methods including DeepAIR, AntiBERTa, AbMap, and A2Binder, while using a comparatively simple architecture.
+          Notably, the results show that even approximate ESMFold structures provide meaningful structural signals
+          that consistently improve downstream prediction accuracy and antibody–antigen embedding quality.
         </p>
       </li>
 
