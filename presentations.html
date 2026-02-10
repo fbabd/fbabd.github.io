@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentations & Talks — Faisal Bin Ashraf</title>
+  <meta name="description" content="Conference presentations, talks, and slides by Faisal Bin Ashraf.">
+  <link rel="canonical" href="https://fbabd.github.io/presentations.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .talk-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .talk-card:hover {
+      border-color: #bfdbfe;
+      box-shadow: 0 4px 16px rgba(37,99,235,0.06);
+    }
+    .talk-card .talk-type {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .talk-card .talk-type.oral {
+      color: var(--accent);
+      background: var(--accent-light);
+    }
+    .talk-card .talk-type.poster {
+      color: var(--green);
+      background: var(--green-light);
+    }
+    .talk-card .talk-type.invited {
+      color: #9333ea;
+      background: #faf5ff;
+    }
+    .talk-card .talk-title {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--text-bright);
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+    .talk-card .talk-venue {
+      font-size: 0.88rem;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .talk-card .talk-date {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .talk-card .talk-links {
+      display: flex; gap: 10px; flex-wrap: wrap;
+    }
+    .talk-card .talk-links a {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 4px 12px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      transition: all 0.2s;
+    }
+    .talk-card .talk-links a:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+    .talk-empty {
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 8px;
+    }
+    @media (max-width: 480px) {
+      .talk-card { padding: 18px; }
+      .talk-card .talk-title { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/" class="logo">Faisal B. Ashraf</a>
+  <nav class="desktop-nav">
+    <a href="/#about">about</a>
+  <a href="research.html">research</a>
+  <!-- <a href="presentations.html">talks</a> -->
+  <a href="experiences.html">experience</a>
+    
+  </nav>
+  <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-nav-overlay" role="dialog" aria-label="Navigation menu">
+  <a href="/#about">about</a>
+  <a href="research.html">research</a>
+  <!-- <a href="presentations.html">talks</a> -->
+  <a href="experiences.html">experience</a>
+</div>
+
+<div class="container">
+
+  <div class="page-header">
+    <a href="/" class="back-link">← Home</a>
+    <h1>Presentations & Talks</h1>
+    <p class="page-desc">Conference talks, workshop presentations, and posters. Slide decks linked where available.</p>
+  </div>
+
+  <!-- 2025 -->
+  <section>
+    <h2>2025</h2>
+
+    <div class="talk-card">
+      <span class="talk-type oral">Oral Presentation</span>
+      <div class="talk-title">Predicting Antibody-Antigen Interactions with Structure-Aware LLMs</div>
+      <div class="talk-venue">AAAI 2025 — FMs4Bio: Foundation Models for Biological Discovery Workshop</div>
+      <div class="talk-date">March 2025 · Philadelphia, PA</div>
+      <div class="talk-links">
+        <!-- Add your slide links here -->
+        <!-- <a href="slides/aaai2025-fms4bio.pdf" target="_blank">Slides (PDF) ↗</a> -->
+        <a href="https://doi.org/10.1021/acs.jcim.5c00973" target="_blank" rel="noopener">Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2024 -->
+  <section>
+    <h2>2024</h2>
+
+    <div class="talk-card">
+      <span class="talk-type poster">Poster</span>
+      <div class="talk-title">ASPred: Identification of Antigen-Specific B-Cell Receptors Using LLMs</div>
+      <div class="talk-venue">NeurIPS 2024 — LatinX in AI (LXAI) Workshop</div>
+      <div class="talk-date">December 2024 · Vancouver, Canada</div>
+      <div class="talk-links">
+        <!-- Add your poster link here -->
+        <!-- <a href="slides/neurips2024-lxai-poster.pdf" target="_blank">Poster (PDF) ↗</a> -->
+        <a href="https://doi.org/10.1093/jimmun/vkaf283.1885" target="_blank" rel="noopener">Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    ===============================================================
+    HOW TO ADD MORE PRESENTATIONS:
+    ===============================================================
+    1. Create a slides/ folder in your repo root
+    2. Add your PDF/PPTX files to slides/
+    3. Copy one of the talk-card blocks above and fill in:
+       - talk-type: "oral", "poster", or "invited"
+       - talk-title: title of the talk
+       - talk-venue: conference/workshop name
+       - talk-date: month year · city
+       - talk-links: uncomment the slide link and set the href
+
+    Example:
+    <div class="talk-card">
+      <span class="talk-type invited">Invited Talk</span>
+      <div class="talk-title">Your Talk Title Here</div>
+      <div class="talk-venue">Conference Name — Workshop/Session</div>
+      <div class="talk-date">Month 2025 · City</div>
+      <div class="talk-links">
+        <a href="slides/your-file.pdf" target="_blank">Slides (PDF) ↗</a>
+        <a href="https://youtu.be/..." target="_blank">Recording ↗</a>
+      </div>
+    </div>
+    ===============================================================
+  -->
+
+  <footer>
+    <span>&copy; <script>document.write(new Date().getFullYear());</script> Faisal Bin Ashraf</span>
+    <span><a href="mailto:faisal.b.ashraf@gmail.com">faisal.b.ashraf@gmail.com</a></span>
+  </footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

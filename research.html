@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research & Publications — Faisal Bin Ashraf</title>
+  <meta name="description" content="Research directions and publications by Faisal Bin Ashraf in machine learning and computational biology.">
+  <link rel="canonical" href="https://fbabd.github.io/research.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/" class="logo">Faisal B. Ashraf</a>
+  <nav class="desktop-nav">
+    <a href="/#about">about</a>
+  <a href="research.html">research</a>
+  <!-- <a href="presentations.html">talks</a> -->
+  <a href="experiences.html">experience</a>
+    
+  </nav>
+  <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-nav-overlay" role="dialog" aria-label="Navigation menu">
+  <a href="/#about">about</a>
+  <a href="research.html">research</a>
+  <!-- <a href="presentations.html">talks</a> -->
+  <a href="experiences.html">experience</a>
+</div>
+
+<div class="container">
+
+  <div class="page-header">
+    <a href="/" class="back-link">← Home</a>
+    <h1>Research & Publications</h1>
+    <p class="page-desc">
+      My research sits at the intersection of machine learning and computational biology, with a focus on structure-aware protein language models for antibody engineering.
+      Full list also on <a href="https://scholar.google.com/citations?hl=en&user=IoJLLqQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+    </p>
+  </div>
+
+  <!-- RESEARCH HIGHLIGHTS -->
+  <section>
+    <h2>Research Highlights</h2>
+    <!--div class="highlights-grid">
+      <div class="highlight-card">
+        <div class="highlight-num">0.93</div>
+        <div class="highlight-label">Binding Prediction AUC</div>
+        <div class="highlight-ctx">Structure-aware ESM2 · JCIM 2025</div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-num">160×</div>
+        <div class="highlight-label">Affinity Improvement</div>
+        <div class="highlight-ctx">ML-guided antibody optimization</div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-num">20+</div>
+        <div class="highlight-label">Publications</div>
+        <div class="highlight-ctx">JCIM, PLOS ONE, Heliyon, AAAI, NeurIPS</div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-num">500K+</div>
+        <div class="highlight-label">Training Samples</div>
+        <div class="highlight-ctx">Large-scale Ab–Ag datasets</div>
+      </div>
+    </div-->
+    <p class="highlights-summary">
+      My research focuses on developing <strong>machine learning and large language model-based methods for biological discovery</strong>,
+    with an emphasis on <strong>antibody-antigen interaction modeling</strong>, <strong>antibody design and optimization</strong>,
+    and <strong>structure-aware prediction of binding and neutralization</strong>.
+    I also build <strong>data-efficient and interpretable AI frameworks</strong> for biomedical applications, including
+    <strong>antiviral drug screening</strong> and <strong>medical image analysis</strong>, bridging computational modeling with
+    real-world therapeutic challenges.
+
+    </p>
+  </section>
+
+   <!-- ==================== 2025 ==================== -->
+  <section>
+    <h2>2025</h2>
+
+    <article class="pub-card" itemscope itemtype="https://schema.org/ScholarlyArticle">
+      <div class="venue">J. Chem. Inf. Model. · 2025</div>
+      <div class="title" itemprop="name">Predicting Antibody-Antigen Interactions with Structure-Aware LLMs: Insights from SARS-CoV-2 Variants</div>
+      <div class="authors" itemprop="author">Faisal Bin Ashraf, Vinz Angelo Madrigal, Stefano Lonardi</div>
+      <a class="doi" href="https://doi.org/10.1021/acs.jcim.5c00973" target="_blank" rel="noopener">DOI: 10.1021/acs.jcim.5c00973 ↗</a>
+      <div class="summary">Proposed a structure-aware LLM framework that is the first to jointly predict antibody
+         binding and neutralization for SARS-CoV-2, consistently outperforming prior classifiers, especially on 
+         closely related viral variants. We further showed that refining ESM-2 with target-specific antibody 
+         sequences and structural information boosts performance substantially, improving binding AUC from 
+         0.84 to 0.93 and neutralization AUC from 0.88 to 0.95, establishing a strong, generalizable baseline
+          for antibody–antigen interaction modeling.</div>
+    </article>
+
+    <article class="pub-card" itemscope itemtype="https://schema.org/SoftwareApplication">
+      <div class="venue">Web-based Research Platform · 2025</div>
+      <div class="title" itemprop="name">SPICE: Structural Protein Interaction Complex Evaluator</div>
+      <div class="authors">Faisal Bin Ashraf, Stefano Lonardi</div>
+      <a class="doi" href="https://spice.cs.ucr.edu/" target="_blank" rel="noopener">Webapp: spice.cs.ucr.edu ↗</a>
+      <div class="summary">End-to-end web platform for comparative structural analysis of protein–protein complexes, supporting interface characterization, energetic analysis, and variant-level comparison.</div>
+    </article>
+
+    <article class="pub-card" itemscope itemtype="https://schema.org/ScholarlyArticle">
+      <div class="venue">J. Immunology · 2025 &nbsp;|&nbsp; NeurIPS LXAI · 2024</div>
+      <div class="title" itemprop="name">ASPred: Identification of Antigen-Specific B-Cell Receptors from Single V(D)J Sequences Using Large Language Models</div>
+      <div class="authors">Karen Paco, Mariana Paco Mendivil, Zihao Zhang, ..., Faisal Bin Ashraf, ..., Stefano Lonardi, Fernando L. Barroso da Silva, Animesh Ray</div>
+      <a class="doi" href="https://doi.org/10.1093/jimmun/vkaf283.1885" target="_blank" rel="noopener">DOI: 10.1093/jimmun/vkaf283.1885 ↗</a>
+      <div class="summary"> ASPred is a large-language-model-based framework trained on antigen-BCR 
+        sequence pairs that accurately predicts antigen-specific B-cell receptors from full repertoires, 
+        successfully generalizes to previously unseen antigens, and validates top candidates via molecular 
+        dynamics simulations, demonstrating that interaction specificity is learnable directly from sequence data.</div>
+    </article>
+  </section>
+    
+   <!-- ==================== 2024 ==================== -->
+  <section>
+    <h2>2024</h2>
+
+    <article class="pub-card" itemscope itemtype="https://schema.org/ScholarlyArticle">
+      <div class="venue">Preprint (bioRxiv) &nbsp;|&nbsp; AAAI FMs4Bio · 2025 </div>
+      <div class="title" itemprop="name">A Large Language Model Guides the Affinity Maturation of Antibodies Generated by Combinatorial Optimization Algorithms</div>
+      <div class="authors">Faisal Bin Ashraf, Karen Paco, Zihao Zhang, Christian J. Dávila Ojeda, Mariana P. Mendivil, Jordan A. Lay, Tristan Y. Yang, Fernando L. Barroso da Silva, Matthew H. Sazinsky, Animesh Ray, Stefano Lonardi</div>
+      <a class="doi" href="https://www.biorxiv.org/content/10.1101/2024.12.19.629473v2" target="_blank" rel="noopener">DOI: 10.1101/2024.12.19.629473 ↗</a>
+      <div class="summary">Developed Ab-Affinity, a hybrid large-language-model-driven antibody design framework 
+        that integrates genetic algorithms and simulated annealing to generate novel SARS-CoV-2-targeting 
+        antibodies, achieving >160-fold binding affinity improvements over experimental candidates and 
+        outperforming existing computational approaches while maintaining strong biophysical stability.</div>
+    </article>
+  
+
+    <article class="pub-card" itemscope itemtype="https://schema.org/ScholarlyArticle">
+      <div class="venue">Heliyon · 2024</div>
+      <div class="title" itemprop="name">Enhancing Breast Cancer Classification via Histopathological Image Analysis: Leveraging Self-Supervised Contrastive Learning and Transfer Learning</div>
+      <div class="authors" itemprop="author">Faisal Bin Ashraf, SM Maksudul Alam, Shahriar M Sakib</div>
+      <a class="doi" href="https://www.cell.com/heliyon/fulltext/S2405-8440(24)00125-7" target="_blank" rel="noopener">DOI: 10.1016/j.heliyon.2024.e24094 ↗</a>
+      <div class="summary">Designed a lightweight, state-of-the-art breast cancer histopathology classifier that 
+        combines self-supervised contrastive learning and an efficient ResNet–Inception architecture, achieving 
+        up to 98% accuracy across multiple magnification levels with ~50% fewer parameters than existing leading 
+        models—enabling accurate, data-efficient, and scalable diagnostic AI.</div>
+    </article>
+
+  </section>
+
+  <!-- ==================== 2023 ==================== -->
+  <section>
+    <h2>2023</h2>
+
+    <article class="pub-card" itemscope itemtype="https://schema.org/ScholarlyArticle">
+      <div class="venue">PLOS ONE · 2023</div>
+      <div class="title" itemprop="name">Bio-Activity Prediction of Drug Candidate Compounds Targeting SARS-CoV-2 Using Machine Learning Approaches</div>
+      <div class="authors" itemprop="author">Faisal Bin Ashraf, Sanjida Akter, Sumona Hoque Mumu, Muhammad Usama Islam, Jasim Uddin</div>
+      <a class="doi" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288053" target="_blank" rel="noopener">DOI: 10.1371/journal.pone.0288053 ↗</a>
+      <div class="summary">Developed and benchmarked machine-learning models for SARS-CoV-2 3CLpro inhibitor 
+        prediction, evaluating 27 classifiers and a neural network that achieved 91% accuracy on ChEMBL and 
+        93% on combined ChEMBL–PubChem data, with F1-scores of 93–94% for active and inactive compounds. 
+        The study further validated scalability on >100,000 molecules and used SHAP-based interpretability 
+        to identify key molecular fingerprints, enabling data-driven and explainable antiviral drug screening. </div>
+    </article>
+
+    <article class="pub-card">
+      <div class="venue">SN Computer Science · 2023</div>
+      <div class="title">YoNet: A Neural Network for Yoga Pose Classification</div>
+      <div class="authors">Faisal Bin Ashraf, Muhammad Usama Islam, Md Rayhan Kabir, Jasim Uddin</div>
+      <a class="doi" href="https://link.springer.com/article/10.1007/s42979-022-01618-8" target="_blank" rel="noopener">DOI: 10.1007/s42979-022-01618-8 ↗</a>
+      <div class="summary"> Proposed a data-efficient deep learning architecture for yoga pose recognition that 
+        jointly captures spatial and depth features, outperforming state-of-the-art CNNs (ResNet, Inception, 
+        Xception) while achieving 94.9% accuracy and 95.6% precision using limited training data. </div>
+    </article>
+
+    <article>
+    Complete list on <a href="https://scholar.google.com/citations?hl=en&user=IoJLLqQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+    </article>
+
+  </section>
+
+
+
+  <footer>
+    <span>&copy; <script>document.write(new Date().getFullYear());</script> Faisal Bin Ashraf</span>
+    <span><a href="mailto:faisal.b.ashraf@gmail.com">faisal.b.ashraf@gmail.com</a></span>
+  </footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

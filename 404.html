@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Faisal Bin Ashraf</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+    .error-page .code {
+      font-family: var(--font-mono);
+      font-size: 4rem;
+      color: var(--border);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .error-page h1 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--text-bright);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .error-page p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 24px;
+    }
+    .error-page a {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 8px 20px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .error-page a:hover {
+      background: var(--accent);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="code">404</div>
+    <h1>Page not found</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <a href="/">← Back to home</a>
+  </div>
+</body>
+</html>
