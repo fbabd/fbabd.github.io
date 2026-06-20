@@ -1,16 +1,13 @@
 /* ===================================================
    Faisal Bin Ashraf — Main JavaScript
    =================================================== */
-
 (function () {
   'use strict';
 
-  // ---- Elements ----
   const menuToggle = document.querySelector('.menu-toggle');
   const mobileNav = document.querySelector('.mobile-nav-overlay');
   const body = document.body;
 
-  // ---- Hamburger menu toggle ----
   if (menuToggle && mobileNav) {
     menuToggle.addEventListener('click', function () {
       const isActive = menuToggle.classList.toggle('active');
@@ -19,7 +16,6 @@
       menuToggle.setAttribute('aria-expanded', isActive);
     });
 
-    // Close menu when a link is tapped
     mobileNav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         menuToggle.classList.remove('active');
@@ -30,7 +26,6 @@
     });
   }
 
-  // ---- Close menu on Escape key ----
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && mobileNav && mobileNav.classList.contains('active')) {
       menuToggle.classList.remove('active');
@@ -40,7 +35,6 @@
     }
   });
 
-  // ---- Smooth scroll for anchor links ----
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
       var targetId = this.getAttribute('href');
@@ -48,49 +42,29 @@
       var target = document.querySelector(targetId);
       if (target) {
         e.preventDefault();
-        var offset = 60;
-        var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        var top = target.getBoundingClientRect().top + window.pageYOffset - 68;
         window.scrollTo({ top: top, behavior: 'smooth' });
-
-        // Update URL hash without jumping
-        if (history.pushState) {
-          history.pushState(null, null, targetId);
-        }
+        if (history.pushState) history.pushState(null, null, targetId);
       }
     });
   });
 
-  // ---- Active nav highlighting on scroll ----
-  var sections = document.querySelectorAll('section[id], .hero[id]');
-  var navLinks = document.querySelectorAll('.desktop-nav a[href^="#"]');
+  /* Mark active nav link based on current page */
+  var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.desktop-nav a, .mobile-nav-overlay a').forEach(function (link) {
+    var href = link.getAttribute('href');
+    if (!href) return;
+    var linkPage = href.split('/').pop().split('#')[0] || 'index.html';
+    if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
+      link.classList.add('active');
+    }
+  });
 
-  function highlightNav() {
-    var scrollPos = window.scrollY + 100;
-    sections.forEach(function (section) {
-      var top = section.offsetTop;
-      var height = section.offsetHeight;
-      var id = section.getAttribute('id');
-      if (scrollPos >= top && scrollPos < top + height) {
-        navLinks.forEach(function (link) {
-          link.style.color = '';
-          if (link.getAttribute('href') === '#' + id) {
-            link.style.color = 'var(--text-bright)';
-          }
-        });
-      }
-    });
-  }
-
-  window.addEventListener('scroll', highlightNav, { passive: true });
-  highlightNav();
-
-  // ---- Handle hash on page load ----
   if (window.location.hash) {
     var target = document.querySelector(window.location.hash);
     if (target) {
       setTimeout(function () {
-        var offset = 60;
-        var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        var top = target.getBoundingClientRect().top + window.pageYOffset - 68;
         window.scrollTo({ top: top, behavior: 'smooth' });
       }, 100);
     }
